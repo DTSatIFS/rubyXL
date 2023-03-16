@@ -400,7 +400,7 @@ describe RubyXL::Cell do
     end
 
     it 'should cause cell value to match a time that is passed in' do
-      time = Time.parse('January 1, 2011')
+      time = DateTime.new(2001,01,01)
       @cell.change_contents(time)
       expect(@cell).to receive(:is_date?).at_least(1).and_return(true)
       expect(@cell.value).to eq(time.to_datetime)
