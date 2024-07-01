@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 # Dependencies required to run this gem.
-gem 'nokogiri', '>= 1.14.2'
+gem 'nokogiri', '>= 1.16.5'
 gem 'rubyzip', '>= 2.3.2' , :require => 'zip'
 
 # Development dependencies.
